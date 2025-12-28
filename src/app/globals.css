@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-deep-onyx: #1A1A1A;
+  --color-antique-gold: #D4AF37;
+  --color-champagne-cream: #F5F5DC;
+  
+  --font-serif: var(--font-playfair);
+  --font-sans: var(--font-lato);
+}
+
+:root {
+  --background: var(--color-deep-onyx);
+  --foreground: var(--color-champagne-cream);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
